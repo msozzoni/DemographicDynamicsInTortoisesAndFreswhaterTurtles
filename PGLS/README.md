@@ -7,4 +7,6 @@ In the folder are also present example files (**or the original files**) that ar
 
 The files are:
 
-Species.txt -> A list with the species name under exame in a single column
+Species.txt -> A list with the species name under exame in a single column with no header \
+Enm_areas.csv -> This file will be produced in the first step of the PGLS_setup.R script. It contains the suitable area (>0.36) of each period under exams. \
+
