@@ -88,9 +88,9 @@ dplyr::select(traits, 'Species','IUCN')
 
 # Heterozigosity ----
 
-gen <- read_excel("data/Species_TSD_HET_IUCN.xlsx")
-gen <- dplyr::select(gen, Species, heterozygosity, Wtheta)
-names(gen) <- c('Species', 'Het', "Wtheta") #"SD", "Habitat", "Diet",
+gen <- read_excel("data/Species_traits.xlsx")
+gen <- dplyr::select(gen, Species, heterozygosity)
+names(gen) <- c('Species', 'Het') 
 
 # Combine data ----
 # We used only Het, Area and Mean_Ne 
@@ -101,7 +101,7 @@ dat <- dat %>%
   mutate(IUCN=fct_recode(IUCN, `VU+EN+CR`='VU', `VU+EN+CR`='EN', `VU+EN+CR`="CR",  `LC+NT`="LC", `LC+NT`="NT" ))%>%
   left_join(areas %>% rename(Species=species)) %>%
   left_join(Mean_Ne)%>%
-  dplyr::select(Species, Het, Wtheta, IUCN, Mean_Ne, Var_Ne, present, past_area_mean, past_area_var)
+  dplyr::select(Species, Het, IUCN, Mean_Ne, Var_Ne, present, past_area_mean, past_area_var)
   
   
 write.csv(dat, "data/dat_all_total.csv", row.names = FALSE) 
