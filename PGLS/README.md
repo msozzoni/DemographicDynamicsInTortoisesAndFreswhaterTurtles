@@ -11,4 +11,4 @@ Species.txt -> A list with the species name under exame in a single column with 
 
 Enm_areas.csv -> This file will be produced in the first step of the PGLS_setup.R script. It contains the suitable area (>0.36) of each period under exams. 
 
-Species_Ne.xlsx -> an excel file containing the mean *N<sub>e/<sub>* estimation and Variance for each species 
+Species_Ne.xlsx -> an excel file containing the mean *N<sub>e</sub>* estimation and Variance for each species 
