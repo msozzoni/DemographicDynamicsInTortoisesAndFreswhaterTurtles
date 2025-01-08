@@ -82,7 +82,7 @@ Mean_Ne <- read_excel("data/Species_Ne.xlsx")
 
 # Life history traits ----
 
-traits <- read_excel("data/Species_TSD_HET_IUCN.xlsx")
+traits <- read_excel("data/Species_traits.xlsx")
 mutate(traits, IUCN = factor(IUCN, levels=c('LC','VU','NT', 'EN','CR','EX')))
 dplyr::select(traits, 'Species','IUCN')
 
