@@ -181,10 +181,10 @@ pl_ne
 cowplot::plot_grid(pl_het, pl_ne, rel_widths = c(1.4,1), rel_heights = 0.5)
 
 
-ggsave("figures/fig_IUCN_LCNT_VUENCR.tiff", compression='lzw', dpi=600, height=3,width=6)
-ggsave("figures/fig_IUCN_LCNT_VUENCR.png", dpi=600, height=3, width=6)
-ggsave("figures/fig_IUCN_LCNT_VUENCR.svg", dpi=600, height=3, width=6)
-ggsave("figures/fig_IUCN_LCNT_VUENCR.pdf", dpi = 600, height = 3, width = 6)
+ggsave("figures/fig_IUCN.tiff", compression='lzw', dpi=600, height=3,width=6)
+ggsave("figures/fig_IUCN.png", dpi=600, height=3, width=6)
+ggsave("figures/fig_IUCN.svg", dpi=600, height=3, width=6)
+ggsave("figures/fig_IUCN.pdf", dpi = 600, height = 3, width = 6)
 
 
 
@@ -281,7 +281,7 @@ pl_ne
 
 cowplot::plot_grid(pl_het, pl_ne, rel_widths=c(1,1))
 
-ggsave("figures/fig_area_LCNT_VUENCR.tiff", compression='lzw', dpi=600, height=4,width=7)
-ggsave("figures/fig_area_LCNT_VUENCR.png", height=4, width=7, dpi=600)
-ggsave("figures/fig_area_LCNT_VUENCR.svg", height=4, width=7, dpi=600)
-ggsave("figures/fig_area_LCNT_VUENCR.pdf", height=4, width=7, dpi=600)
+ggsave("figures/fig_Area.tiff", compression='lzw', dpi=600, height=4,width=7)
+ggsave("figures/fig_Area.png", height=4, width=7, dpi=600)
+ggsave("figures/fig_Area.svg", height=4, width=7, dpi=600)
+ggsave("figures/fig_Area.pdf", height=4, width=7, dpi=600)
